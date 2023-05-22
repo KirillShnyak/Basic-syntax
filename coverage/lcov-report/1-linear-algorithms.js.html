@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Code coverage report for task-1.js</title>
+    <title>Code coverage report for 1-linear-algorithms.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -17,7 +17,7 @@
   <body>
     <div class="wrapper">
       <div class="pad1">
-        <h1><a href="index.html">All files</a> task-1.js</h1>
+        <h1><a href="index.html">All files</a> 1-linear-algorithms.js</h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
@@ -40,7 +40,7 @@
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">14/14</span>
+            <span class="fraction">16/16</span>
           </div>
         </div>
         <p class="quiet">
@@ -78,7 +78,14 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -98,29 +105,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function sumMult() {
-    let nums = prompt('Enter numbers(num, num): ');
-    nums = nums.split(', ');
-    const a = Number(nums[0]);
-    const b = Number(nums[1])
-    const sum = a + b;
-    const mult = a * b;
-    return alert(`${sum}, ${mult}`);
+  let nums = prompt("Enter numbers(num, num): "); // eslint-disable-line
+  nums = nums.split(", ");
+  const a = Number(nums[0]);
+  const b = Number(nums[1]);
+  const sum = a + b;
+  const mult = a * b;
+  return alert(`${sum}, ${mult}`); // eslint-disable-line
 }
 &nbsp;
 export function characters() {
-    let words = prompt('Enter two words: ');
-    words = words.split(' ')
-    const a = words[0]
-    const b = words[1]
-    return alert(a.length + b.length);
+  let words = prompt("Enter two words: "); // eslint-disable-line
+  words = words.split(" ");
+  const a = words[0];
+  const b = words[1];
+  return alert(a.length + b.length); // eslint-disable-line
 }
 &nbsp;
 export function digitSum() {
-    const num = prompt('Enter a three digit number: ')
-    return alert (num.split('').map((digit) =&gt; Number(digit)).reduce((sum, current) =&gt; sum + current, 0))
+  const num = prompt("Enter a three digit number: "); // eslint-disable-line
+  /* eslint-disable no-alert */
+  return alert(
+    num
+      .split("")
+      .map((digit) =&gt; Number(digit))
+      .reduce((sum, current) =&gt; sum + current, 0)
+  );
+  /* eslint-disable no-alert */
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -136,7 +157,7 @@ export function digitSum() {
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2023-05-22T16:40:25.561Z
+      at 2023-05-22T17:03:30.618Z
     </div>
     <script src="prettify.js"></script>
     <script>
