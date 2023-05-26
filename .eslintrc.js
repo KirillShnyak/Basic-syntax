@@ -17,7 +17,16 @@ module.exports = {
       "error",
       {
         ignoreComments: true,
+        code: 100,
       },
     ],
+    "no-plusplus": [
+      "error",
+      {
+        allowForLoopAfterthoughts: true,
+      },
+    ],
+    "consistent-return": "off",
+    eqeqeq: "off",
   },
 };
