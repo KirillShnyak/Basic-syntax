@@ -20,12 +20,8 @@ module.exports = {
         code: 100,
       },
     ],
-    "no-plusplus": [
-      "error",
-      {
-        allowForLoopAfterthoughts: true,
-      },
-    ],
+    "no-plusplus": "off",
+    "no-alert": "off",
     "consistent-return": "off",
     eqeqeq: "off",
   },
