@@ -24,5 +24,6 @@ module.exports = {
     "no-alert": "off",
     "consistent-return": "off",
     eqeqeq: "off",
+    "no-param-reassign": "off",
   },
 };
