@@ -20,8 +20,8 @@ describe("getDayOfWeek", () => {
 describe("getMinutes", () => {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const diff = now - today - now.getSeconds();
-  const minutes = Math.round(diff / 60000);
+  const diff = now - today;
+  const minutes = Math.floor(diff / 60000);
   it("how many minutes have passed since the beginning of today", () => {
     expect(getMinutes()).toEqual(minutes);
   });
