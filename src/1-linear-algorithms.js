@@ -1,8 +1,4 @@
-export function sumMult() {
-  let nums = prompt("Enter numbers(num, num): "); // eslint-disable-line
-  nums = nums.split(", ");
-  const a = Number(nums[0]);
-  const b = Number(nums[1]);
+export function sumMult(a, b) {
   const sum = a + b;
   const mult = a * b;
   return alert(`${sum}, ${mult}`); // eslint-disable-line

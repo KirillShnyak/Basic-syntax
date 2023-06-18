@@ -1,16 +1,11 @@
 export function diff(a, b) {
-  let difference;
-  if (a > b) {
-    difference = a - b;
-    return difference;
-  }
-  difference = b - a;
-  return difference;
+  return Math.abs(a - b);
 }
 
 export function isWord(string) {
-  const regex = /\d|([A-Za-z]\s[A-Za-z])/;
-  return !regex.test(string);
+  const splitString = string.split(" ");
+  const stringLength = splitString.length;
+  return stringLength === 1;
 }
 
 export function pow(a, x) {

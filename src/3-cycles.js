@@ -1,9 +1,7 @@
 export function sumFrom50to100() {
   let sum = 0;
-  let number = 50;
-  while (number <= 100) {
-    sum += number;
-    number++;
+  for (let i = 50; i <= 100; i++) {
+    sum += i;
   }
   return sum;
 }
@@ -19,10 +17,8 @@ export function multiBy7() {
 export function average() {
   const input = prompt("Enter number: ");
   let sum = 0;
-  for (let i = 1; i <= input; i++) {
-    if (i % 2 !== 0) {
-      sum += i;
-    }
+  for (let i = 1; i <= input; i += 2) {
+    sum += i;
   }
   return sum;
 }

@@ -5,7 +5,6 @@ export function largestNum(a, b) {
 export function whatIsMonth() {
   const input = prompt("Enter month number"); // eslint-disable-line
   const months = [
-    " ",
     "January",
     "February",
     "March",
@@ -19,11 +18,8 @@ export function whatIsMonth() {
     "November",
     "December",
   ];
-  for (let i = 0; i < months.length; i++) {
-    if (i == input) {
-      return months[i];
-    }
-  }
+  const i = input;
+  return months[i - 1];
 }
 
 export function circleInSquare(circle, square) {

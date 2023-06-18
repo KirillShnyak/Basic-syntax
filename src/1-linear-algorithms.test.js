@@ -5,9 +5,7 @@ describe("sumMult", () => {
     window.alert = jest.fn();
   });
   it("return sum and mult", () => {
-    jest.spyOn(window, "prompt").mockReturnValue("5, 2");
-
-    sumMult();
+    sumMult(5, 2);
 
     expect(window.alert).toHaveBeenCalledWith("7, 10");
   });

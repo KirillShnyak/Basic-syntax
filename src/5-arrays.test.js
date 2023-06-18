@@ -1,4 +1,4 @@
-import { sumNumInArr, minMax } from "./5-arrays";
+import { sumNumInArr, multyTwo, minMax } from "./5-arrays";
 
 describe("sumNumInArr", () => {
   let a;
@@ -16,6 +16,20 @@ describe("sumNumInArr", () => {
 
   it("a[1]*2 = b[1]", () => {
     expect(a[0] * 2 === b[0]).toBeTruthy();
+  });
+});
+
+describe("multyTwo", () => {
+  let a;
+  let b;
+
+  beforeEach(() => {
+    a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    b = multyTwo(a);
+  });
+
+  it("a[1]*2 = b[1]", () => {
+    expect(a[1] * 2 === b[1]).toBeTruthy();
   });
 });
 

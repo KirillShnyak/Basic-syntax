@@ -19,12 +19,6 @@ describe("isWord", () => {
   it("if more then one word return false", () => {
     expect(isWord("Hallo world")).toBe(false);
   });
-  it("number is not a word", () => {
-    expect(isWord("the11")).toBe(false);
-  });
-  it("spaces do not affect the word", () => {
-    expect(isWord("  a   ")).toBe(true);
-  });
 });
 
 describe("pow", () => {

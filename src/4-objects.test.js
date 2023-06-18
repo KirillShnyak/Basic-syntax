@@ -1,20 +1,21 @@
-import { userAge } from "./4-objects";
+import { userAge, adminclone } from "./4-objects";
 
 describe("userAge", () => {
   let user;
   let admin;
-  let age;
-  let name;
-  let role;
+  // let age;
+  // let name;
+  // let role;
 
   beforeEach(() => {
     user = { name: "Jhon" };
     jest.spyOn(window, "prompt").mockReturnValue(18);
     userAge(user);
-    admin = { ...user, role: "admin" };
-    age = admin.age;
-    name = admin.name;
-    role = admin.role;
+    adminclone(user, admin);
+    // admin = { ...user, role: "admin" };
+    // age = admin.age;
+    // name = admin.name;
+    // role = admin.role;
   });
 
   it("is a functions", () => {
@@ -28,7 +29,24 @@ describe("userAge", () => {
   it("user is 18 ears old", () => {
     expect(user.age).toBe(18);
   });
+});
 
+describe("adminclone", () => {
+  let user;
+  let admin;
+  let age;
+  let name;
+  let role;
+
+  beforeEach(() => {
+    user = { name: "Jhon" };
+    jest.spyOn(window, "prompt").mockReturnValue(18);
+    userAge(user);
+    admin = adminclone(user);
+    age = admin.age;
+    name = admin.name;
+    role = admin.role;
+  });
   it("admin is true", () => {
     expect(admin.age).toBe(18);
   });
