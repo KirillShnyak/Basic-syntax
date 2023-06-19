@@ -19,6 +19,9 @@ describe("isWord", () => {
   it("if more then one word return false", () => {
     expect(isWord("Hallo world")).toBe(false);
   });
+  it("if one word return true", () => {
+    expect(isWord(" Hallo  ")).toBe(true);
+  });
 });
 
 describe("pow", () => {

@@ -3,19 +3,12 @@ import { userAge, adminclone } from "./4-objects";
 describe("userAge", () => {
   let user;
   let admin;
-  // let age;
-  // let name;
-  // let role;
 
   beforeEach(() => {
     user = { name: "Jhon" };
     jest.spyOn(window, "prompt").mockReturnValue(18);
-    userAge(user);
+    user = userAge(user);
     adminclone(user, admin);
-    // admin = { ...user, role: "admin" };
-    // age = admin.age;
-    // name = admin.name;
-    // role = admin.role;
   });
 
   it("is a functions", () => {
@@ -41,7 +34,7 @@ describe("adminclone", () => {
   beforeEach(() => {
     user = { name: "Jhon" };
     jest.spyOn(window, "prompt").mockReturnValue(18);
-    userAge(user);
+    user = userAge(user);
     admin = adminclone(user);
     age = admin.age;
     name = admin.name;

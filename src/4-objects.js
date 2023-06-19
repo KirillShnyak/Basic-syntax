@@ -1,5 +1,7 @@
 export function userAge(user) {
-  user.age = prompt("Enter user age: ");
+  const userClone = { ...user };
+  userClone.age = prompt("Enter user age: ");
+  return userClone;
 }
 
 export function adminclone(user) {
